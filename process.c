@@ -20,7 +20,7 @@ void pad_and_mask(const uint32_t mask, struct Message_Struct *message) {
   message->paylaod.crc32 = calced_crc32;
 }
 
-#define _BUFFER_SIZE 8 * 2
+#define _BUFFER_SIZE 512 * 2
 static char buffer[_BUFFER_SIZE + 1] = {0};
 static size_t inner_position = 0;
 

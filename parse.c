@@ -9,7 +9,7 @@
 #include "common.h"
 #include "process.h"
 
-#define _BUFFER_SIZE 8
+#define _BUFFER_SIZE 512
 static char buffer[_BUFFER_SIZE] = {0};
 static size_t read_bytes = 0;
 static size_t total_position_in_file = 0;
