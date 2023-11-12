@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
   FILE *in;
   int ret_code = 0;
 
+  // Don't work if you run a symlink, to do: symlink check
   const char *exe_path = argv[0];
   const char *full_path_to_out_file = get_path_to_datafile(exe_path, out_file);
 
